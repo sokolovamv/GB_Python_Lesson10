@@ -43,6 +43,7 @@ async def complex_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     y = Complex(y_Re,y_Im)
     await update.message.reply_text(f'{x} {sign} {y} =  {result(x,sign,y)}')
 
+# Арифместические действия
 def result(x,sign,y):
     if sign == '+':
         return x + y
